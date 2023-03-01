@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Using Password</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <script defer src="./js/login.js"></script>
+  </head>
+  <body>
+    <div class="bg-img">
+      <div class="wrapper">
+        <h1>Please Login</h1>
+        <h2 class="hide not-user" id="notMember">
+          Sorry, that user is not in our database. Please sign up or try another
+          user.
+        </h2>
+        <h2 class="hide wrong-password" id="wrongPass">
+          Wrong Password. Please try again.
+        </h2>
+        <form class="cred">
+          <input type="text" id="user" name="user" placeholder="Username" />
+          <input
+            type="password"
+            class="hide"
+            id="pass"
+            name="pass"
+            placeholder="Password"
+          />
+
+          <button
+            type="submit"
+            id="log-in"
+            class="show-btn log-in-btn"
+            onclick="logInUser()"
+          >
+            Log In
+          </button>
+          <button type="button">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
